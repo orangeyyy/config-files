@@ -1,0 +1,29 @@
+[user]
+  name = orangeyyy
+  email = orange_yyy@126.com
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+
+[alias]
+    st = status
+    rb = rebase
+    rbc = rebase --continue
+    rba = rebase --abort
+    rbi = rebase -i
+    skip = update-index --skip-worktree
+    noskip = update-index --no-skip-worktree
+    amd = commit --amend --no-edit
+    amde = commit --amend
+    ci = commit
+    co = checkout
+    br = branch
+    rs = reset
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    dag1 = log --graph --decorate --oneline
+    dag = log --graph --decorate --oneline --all
+    pick = cherry-pick
+    diffn = diff --name-only
+    ps = push
